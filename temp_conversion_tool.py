@@ -1,4 +1,4 @@
- FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 
 def convert_to_celsius(fahrenheit):
@@ -14,11 +14,11 @@ if __name__ == "__main__":
 
         if unit == "F":
             converted = convert_to_celsius(temp)
-            print(f"{temp}°F is {converted}°C")
+            print(f"{temp:.2f}°F is {converted:.2f}°C")
         elif unit == "C":
             converted = convert_to_fahrenheit(temp)
-            print(f"{temp}°C is {converted}°F")
+            print(f"{temp:.2f}°C is {converted:.2f}°F")
         else:
             print("Invalid unit. Please enter 'C' or 'F'.")
     except ValueError:
-        raise ValueError("Invalid temperature. Please enter a numeric value.")
+        print("Invalid temperature. Please enter a numeric value.")
