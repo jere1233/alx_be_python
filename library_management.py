@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> c5d280a (Add all files for ALX programming paradigm project)
 class Book:
     def __init__(self, title, author):
         self.title = title
@@ -5,6 +9,7 @@ class Book:
         self._is_checked_out = False
 
     def check_out(self):
+
         if self._is_checked_out:
             return False
         self._is_checked_out = True
@@ -15,6 +20,10 @@ class Book:
             return False
         self._is_checked_out = False
         return True
+        self._is_checked_out = True
+
+    def return_book(self):
+        self._is_checked_out = False
 
     def is_available(self):
         return not self._is_checked_out
